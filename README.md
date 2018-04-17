@@ -8,13 +8,12 @@ Example Actions Dict:
 
 ```python
 {
-  "HI": { #desired object can be object, dict - depends on your sending funtion
-    "message":
-    "Hey!"
+  #desired object can be dict, database entry - depends on your sending funtion (or vice versa)
+  "HI": {
+    "message": "Hey!"
   },
   "BUY": {
-    "message":
-    "Bye!"
+    "message":"Bye!"
   }
 }
 ```
@@ -34,3 +33,5 @@ conversations.dispatch(sender_msg.sender, action)
 ```
 
 
+## Todo:
+[ ] `__repr__` and `__str__`
